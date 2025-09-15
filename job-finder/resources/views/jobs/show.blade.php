@@ -1,7 +1,5 @@
 <x-layout>
-    <div class="div">
-        @foreach ($jobs as $job)
-            <x-card class="mb-4">
+        <x-card class="mb-4">
                 <div class="flex  justify-between">
                     <div>
                         {{ $job->title }}
@@ -25,11 +23,7 @@
                 </div>
                 {{-- <p class="text-sm">{!!Str::limit($job->description, 300)!!}</p> --}}
                 <p class="text-sm mb-4""> {!! nl2br(e($job->description)) !!}</p>
-                <div>
-                    <a href="{{ route('jobs.show', $job) }}"
-                        class="text-white text-sm bg-gray-400 px-4 py-2 rounded-md hover:bg-black">View Details</a>
-                </div>
+
             </x-card>
-        @endforeach
-    </div>
+
 </x-layout>
