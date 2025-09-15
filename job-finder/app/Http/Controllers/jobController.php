@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Models\job;
 
-class jobController extends Controller
+class JobController extends Controller
 {
     /**
      * Display a listing of the resource.
